@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 General Styles */
+* {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    color: #1B1F23; /* Dark text for best contrast */
+}
+
+/* 🌊 Soft Blue Background */
+body {
+    background-color: #A9C9FF;
+}
+
+/* 📌 Containers with White Background */
+.container, .card, .box {
+    background-color: #F9FAFB;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 Links & Active States */
+a {
+    color: #2D3E50;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #1B1F23;
+}
+
+a.active {
+    background-color: #f4f6f9;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* 🔘 Buttons */
+button {
+    background-color: #2D3E50;
+    color: #1B1F23;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7D8CA3;
+    color: #1B1F23;
+    transform: translateY(-2px);
+}
+
+/* 📌 Form Elements */
+select, input, textarea {
+    background-color: #F9FAFB;
+    border: 1px solid #7D8CA3;
+    color: #1B1F23;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+select:focus, input:focus, textarea:focus {
+    border-color: #2D3E50;
+    box-shadow: 0 0 5px rgba(45, 62, 80, 0.4);
+}
+
+/* 🎀 Headers & Titles */
+h1, h2, h3, h4 {
+    font-family: 'Prata', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2D3E50;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #1B1F23;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2D3E50;
+}
+
+/* 📌 Borders & Dividers */
+hr {
+    border-color: #7D8CA3;
+}
+
+/* 📌 Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #A9C9FF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2D3E50;
+    border-radius: 10px;
+}
+
+/* 📱 Mobile Styles */
+@media (max-width: 640px) {
+    a.active {
+        background-color: #2D3E50;
+        color: white;
+        border-radius: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
